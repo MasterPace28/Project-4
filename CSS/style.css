@@ -1,0 +1,151 @@
+/* ========================================
+  Fixes Box Sizing
+======================================== */
+
+html
+{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after
+{
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+
+
+/* ========================================
+  Clears List Styles, Margin, and Padding
+======================================== */
+
+ol,
+ul
+{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+
+/* ========================================
+  General CSS
+======================================== */
+
+body
+{
+  color: #1c1c1c;
+}
+
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: white;
+}
+
+/* Search Box */
+
+.searchbox
+{
+  font-size: 1em;
+
+  display: block;
+
+  width: 80%;
+  max-width: 300px;
+  height: 40px;
+  margin: 30px auto;
+  padding: 3px;
+
+  text-align: center;
+
+  border: solid lightgrey 2px;
+  border-radius: 8px;
+}
+
+.searchbox:focus
+{
+  outline: none;
+}
+
+/* Gallery */
+
+.content
+{
+  max-width: 1040px;
+  margin: 70px auto;
+}
+
+.gallery
+{
+  text-align: center;
+}
+
+.gallery li
+{
+  display: inline-block;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery img
+{
+  width: 160px;
+  height: 160px;
+}
+
+/* Footer */
+
+footer
+{
+  font-size: .8em;
+
+  clear: both;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+
+/* ========================================
+  Media Queries
+======================================== */
+
+/* Tablets */
+
+/*@media screen and (min-width: 480px)
+{
+
+}*/
+
+/* Large Displays */
+
+@media screen and (min-width: 1026px)
+{
+  .searchbox
+  {
+    max-width: 460px;
+  }
+
+  .gallery li
+  {
+    padding: 30px;
+  }
+
+  /* Max-width: 1600px */
+}
